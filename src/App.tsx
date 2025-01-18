@@ -58,6 +58,7 @@ import LCReport from "./modules/Dashboard/modules/LearningCircleV2/pages/LCRepor
 import UserInterest from "./modules/Common/Authentication/pages/Onboarding/UserInterest/UserInterest";
 import PathFinder from "./modules/Common/Authentication/pages/Onboarding/PathFinder/PathFinder";
 import RegisterPage from "./modules/Common/Authentication/pages/Onboarding/Register/Register";
+import LCLanding from "./modules/Dashboard/modules/LearningCircleV3/pages/landing/LCLanding";
 
 const Profile = lazy(
     () => import("./modules/Dashboard/modules/Profile/pages/Profile")
@@ -732,10 +733,10 @@ function App() {
                         //     path: "learning-circle",
                         //     element: <LearningCircleLandingPage />
                         // },
-                        // {
-                        //     path: "learningcirclev3",
-                        //     element: <Landing />
-                        // },
+                        {
+                            path: "learningcirclev3",
+                            element: <LCLanding />
+                        },
                         {
                             path: "learningcircle",
                             element: <LearningCircleLanding />
